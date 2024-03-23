@@ -11,8 +11,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100%;
         font-family: sans-serif;
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 30px;
       }
 
       #main_links_container {
@@ -29,7 +31,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 30px;
       }
 
       .links {
@@ -49,6 +51,16 @@
       a:hover {
         text-shadow: 0 0 1.18rem currentColor;
       }
+
+      .highlight {
+        font-size: 22px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -58,6 +70,7 @@
 
     <div id="main_links_container">
       <div class="links_container">
+        <div>Some Utilities</div>
         <div class="links">
           <a target="_blank" href="http://calculator.merkoba.com">Calc</a>
           <a target="_blank" href="https://mutant.merkoba.com">Mutant</a>
@@ -67,9 +80,11 @@
           <a target="_blank" href="http://pager.merkoba.com">Pager</a>
           <a target="_blank" href="http://w.merkoba.com/oracle">Oracle</a>
           <a target="_blank" href="https://hue.merkoba.com">Hue</a>
+          <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/githop/">GitHop</a>
         </div>
 
       <div class="links_container">
+        <div>Some Games</div>
         <div class="links">
           <a target="_blank" href="http://tetris.merkoba.com">Tetris</a>
           <a target="_blank" href="http://mines.merkoba.com">Mines</a>
@@ -77,15 +92,18 @@
           <a target="_blank" href="http://flood.merkoba.com">Flood</a>
           <a target="_blank" href="http://snek.merkoba.com">Snek</a>
           <a target="_blank" href="http://conway.merkoba.com">Conway</a>
+          <a target="_blank" href="https://madprops.github.io/Real-Enough-Records/">Band Creator</a>
         </div>
       </div>
 
-      <div class="links_container">
-        <div class="links">
-          <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/grasshopper-urls/">Grasshopper</a>
-          <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/githop/">GitHop</a>
-          <a target="_blank" href="https://madprops.github.io/Real-Enough-Records/">Band Creator</a>
-        </div>
+      <div class="highlight">
+        <div><b>New: An interface for llama.cpp and ChatGPT</b></div>
+        <a href="https://meltdown.merkoba.com"><img src="meltdown.gif"></a>
+      </div>
+
+      <div class="highlight">
+        <div><b>Powerful tab manager for Firefox</b></div>
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/grasshopper-urls/"><img src="grasshopper.png"></a>
       </div>
     </div>
   </body>
