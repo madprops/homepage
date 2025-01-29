@@ -87,7 +87,7 @@ a.media:hover {
     text-shadow: 0 0 1.18rem currentcolor;
 }
 
-#media_background {
+.media_background {
     margin-top: 3rem;
     background: url(img/media.gif);
     background-size: cover;
@@ -95,13 +95,56 @@ a.media:hover {
     min-width: 30rem;
 }
 
-#media {
+.media_background_2 {
+    margin-top: 3rem;
+    background: url(img/media2.gif);
+    background-size: cover;
+    background-position: center;
+    min-width: 30rem;
+}
+
+.media_container {
+    height: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(61, 72, 71, 0.7);
+    background-color: rgba(61, 72, 71, 0.3);
     font-family: monospace;
     padding: 1.6rem;
     gap: 1.6rem;
+}
+
+.media_row {
+    flex-direction: row;
+    padding: 0.9rem;
+}
+
+.media_image {
+    width: 80px;
+    outline: 1px solid white;
+}
+
+.media_image:hover {
+    outline: 3px solid white;
+}
+
+.red {
+    filter: hue-rotate(330deg);
+}
+
+.green {
+    filter: hue-rotate(155deg);
+}
+
+.blue {
+    filter: hue-rotate(210deg);
+}
+
+.yellow {
+    filter: hue-rotate(36deg);
+}
+
+.cyan {
+    filter: hue-rotate(180deg);
 }
