@@ -104,7 +104,6 @@ a.media:hover {
 }
 
 .media_container {
-    height: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
