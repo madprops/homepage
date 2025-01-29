@@ -5,74 +5,9 @@
     <meta charset="utf-8">
     <title>Merkoba</title>
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
-    <style>
-      body, html {
-        background-color: rgb(22, 22, 22);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: sans-serif;
-        font-size: 20px;
-        padding-top: 20px;
-        padding-bottom: 30px;
-      }
-
-      #main_links_container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-      }
-
-      .links_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-      }
-
-      .links {
-        display: flex;
-        flex-direction: row;
-      }
-
-      .links > * {
-        padding: 10px;
-        font-size: 20px;
-      }
-
-      a:visited, a:hover, a:link {
-        color: white;
-      }
-
-      a:hover {
-        text-shadow: 0 0 1.18rem currentColor;
-      }
-
-      .highlight {
-        font-size: 22px;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-      }
-
-      #about {
-        padding-bottom: 4px;
-      }
-
-      .desc {
-        margin-left: 0.8rem;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
     <a id="about" href="about.html">
       <img id="img" src="img/broder.gif" title="Forcing rebuild of pins">
@@ -88,73 +23,74 @@
       <a target="_blank" href="https://curls.merkoba.com/mad">Curl</a>
     </div>
 
-    <div class="highlight">
-      <a target="_blank" href="https://www.youtube.com/watch?v=C2woc7oRV1w">The Thirteen Cryptical Prophecies of Mu</a>
-    </div>
+    <div class="header"><div>Software Projects</div></div>
 
-    <div class="highlight">
-      <div><b>Tab manager for Firefox</b><span class="desc">(javascript|addon)</span></div>
-      <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/grasshopper-urls/"><img src="img/grasshopper.jpg" loading="lazy"></a>
-    </div>
+    <div id="projects">
+      <div class="project">
+        <div><b>Tab manager for Firefox</b><span class="desc">(javascript|addon)</span></div>
+        <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/grasshopper-urls/"><img src="img/grasshopper.jpg" loading="lazy"></a>
+      </div>
 
-    <div class="highlight">
-      <div><b>Interface to AI</b><span class="desc">(python|tk)</span></div>
-      <a target="_blank" href="https://github.com/Merkoba/Meltdown"><img src="img/meltdown.jpg" loading="lazy"></a>
-    </div>
+      <div class="project">
+        <div><b>Interface to AI</b><span class="desc">(python|tk)</span></div>
+        <a target="_blank" href="https://github.com/Merkoba/Meltdown"><img src="img/meltdown.jpg" loading="lazy"></a>
+      </div>
 
-    <div class="highlight">
-      <div><b>Game about ants</b><span class="desc">(python|qt)</span></div>
-      <a target="_blank" href="https://github.com/madprops/cromulant"><img src="img/cromulant.jpg" loading="lazy"></a>
-    </div>
+      <div class="project">
+        <div><b>Game about ants</b><span class="desc">(python|qt)</span></div>
+        <a target="_blank" href="https://github.com/madprops/cromulant"><img src="img/cromulant.jpg" loading="lazy"></a>
+      </div>
 
-    <div class="highlight">
-      <div><b>Status text hosting</b><span class="desc">(javascript|web|python)</span></div>
-      <a target="_blank" href="https://curls.merkoba.com"><img src="img/curls.jpg" loading="lazy"></a>
-    </div>
+      <div class="project">
+        <div><b>Status text hosting</b><span class="desc">(javascript|web|python)</span></div>
+        <a target="_blank" href="https://curls.merkoba.com"><img src="img/curls.jpg" loading="lazy"></a>
+      </div>
 
-    <div class="highlight">
-      <div><b>A new kind of Tetris</b><span class="desc">(javascript|web)</span></div>
-      <a target="_blank" href="http://tetris.merkoba.com"><img src="img/tetris.jpg" loading="lazy"></a>
-    </div>
+      <div class="project">
+        <div><b>A new kind of Tetris</b><span class="desc">(javascript|web)</span></div>
+        <a target="_blank" href="http://tetris.merkoba.com"><img src="img/tetris.jpg" loading="lazy"></a>
+      </div>
 
-    <div class="highlight">
-      <div><b>Multi-line calculator</b><span class="desc">(javascript|web)</span></div>
-      <a target="_blank" href="http://calculator.merkoba.com"><img src="img/calculator.jpg" loading="lazy"></a>
-    </div>
+      <div class="project">
+        <div><b>Multi-line calculator</b><span class="desc">(javascript|web)</span></div>
+        <a target="_blank" href="http://calculator.merkoba.com"><img src="img/calculator.jpg" loading="lazy"></a>
+      </div>
 
-    <div class="highlight">
-      <div><b>Program to make gifs</b><span class="desc">(python)</span></div>
-      <a target="_blank" href="https://github.com/madprops/gifmaker"><img src="img/gifmaker.gif" loading="lazy"></a>
-    </div>
+      <div class="project">
+        <div><b>Program to make gifs</b><span class="desc">(python)</span></div>
+        <a target="_blank" href="https://github.com/madprops/gifmaker"><img src="img/gifmaker.gif" loading="lazy"></a>
+      </div>
 
-    <div class="highlight">
-      <div><b>Clipboard manager for linux</b><span class="desc">(python|rofi)</span></div>
-      <a target="_blank" href="https://github.com/madprops/clipton"><img src="img/clipton.jpg" loading="lazy"></a>
-    </div>
+      <div class="project">
+        <div><b>Clipboard manager for linux</b><span class="desc">(python|rofi)</span></div>
+        <a target="_blank" href="https://github.com/madprops/clipton"><img src="img/clipton.jpg" loading="lazy"></a>
+      </div>
 
-    <div class="highlight">
-      <div><b>AI bot for irc</b><span class="desc">(javascript|nodejs)</span></div>
-      <a target="_blank" href="https://github.com/madprops/airc"><img src="img/airc.jpg" loading="lazy"></a>
-    </div>
+      <div class="project">
+        <div><b>AI bot for irc</b><span class="desc">(javascript|nodejs)</span></div>
+        <a target="_blank" href="https://github.com/madprops/airc"><img src="img/airc.jpg" loading="lazy"></a>
+      </div>
 
-    <div class="highlight">
-      <div><b>Recursive text search</b><span class="desc">(nim)</span></div>
-      <a target="_blank" href="https://github.com/madprops/goldie"><img src="img/goldie.jpg" loading="lazy"></a>
-    </div>
+      <div class="project">
+        <div><b>Recursive text search</b><span class="desc">(nim)</span></div>
+        <a target="_blank" href="https://github.com/madprops/goldie"><img src="img/goldie.jpg" loading="lazy"></a>
+      </div>
 
-    <div class="highlight">
-      <div><b>Jump to GitHub locations</b><span class="desc">(javascript|addon)</span></div>
-      <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/githop/"><img src="img/githop.jpg" loading="lazy"></a>
-    </div>
+      <div class="project">
+        <div><b>Jump to GitHub locations</b><span class="desc">(javascript|addon)</span></div>
+        <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/githop/"><img src="img/githop.jpg" loading="lazy"></a>
+      </div>
 
-    <div class="highlight">
-      <div><b>Save encrypted notes</b><span class="desc">(rust)</span></div>
-      <a target="_blank" href="https://github.com/Merkoba/Effer"><img src="img/effer.jpg" loading="lazy"></a>
+      <div class="project">
+        <div><b>Save encrypted notes</b><span class="desc">(rust)</span></div>
+        <a target="_blank" href="https://github.com/Merkoba/Effer"><img src="img/effer.jpg" loading="lazy"></a>
+      </div>
     </div>
 
     <div id="main_links_container">
       <div class="links_container">
-        <div>Some Utilities</div>
+        <div><b>Some Utilities</b></div>
+
         <div class="links">
           <a target="_blank" href="https://mutant.merkoba.com">Mutant</a>
           <a target="_blank" href="https://rigga.merkoba.com">Rigga</a>
@@ -165,7 +101,8 @@
         </div>
 
       <div class="links_container">
-        <div>Some Games</div>
+        <div><b>Some Games</b></div>
+
         <div class="links">
           <a target="_blank" href="http://mines.merkoba.com">Mines</a>
           <a target="_blank" href="http://elements.merkoba.com">Elements</a>
@@ -176,8 +113,16 @@
         </div>
       </div>
 
-      <div class="highlight">
-        <a target="_blank" href="https://www.youtube.com/watch?v=84wQ4jtuZxs">Rivers of the Nether Realm</a>
+      <div class="media">
+        <a class="green" target="_blank" href="https://www.youtube.com/watch?v=aLGriat6s7Y">Circle Of The Tyrants</a>
+      </div>
+
+      <div class="media">
+        <a class="green" target="_blank" href="https://www.youtube.com/watch?v=84wQ4jtuZxs">Rivers of the Nether Realm</a>
+      </div>
+
+      <div class="media">
+        <a class="green" target="_blank" href="https://www.youtube.com/watch?v=C2woc7oRV1w">The Thirteen Cryptical Prophecies of Mu</a>
       </div>
     </div>
   </body>
