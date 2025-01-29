@@ -11,12 +11,21 @@ body, html {
     padding-bottom: 30px;
 }
 
-.links_container {
+#links_background {
+    margin-top: 3rem;
+    background: url(img/links.gif);
+    background-size: cover;
+    background-position: center;
+    min-width: 30rem;
+}
+
+#links_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    background-color: rgba(60, 60, 60, 0.7);
+    padding: 1.6rem;
     gap: 0.5rem;
 }
 
@@ -69,13 +78,21 @@ a:hover {
     margin-left: 0.8rem;
 }
 
-a.green:visited, a.green:hover, a.green:link {
-    color: #dbffdb;
+a.media:visited, a.media:hover, a.media:link {
+    color: white;
     text-decoration: none;
 }
 
-a.green:hover {
+a.media:hover {
     text-shadow: 0 0 1.18rem currentcolor;
+}
+
+#media_background {
+    margin-top: 3rem;
+    background: url(img/media.gif);
+    background-size: cover;
+    background-position: center;
+    min-width: 30rem;
 }
 
 #media {
@@ -83,9 +100,8 @@ a.green:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.6rem;
-    background-color: #3d4847;
-    margin-top: 2rem;
-    gap: 1.6rem;
+    background-color: rgba(61, 72, 71, 0.7);
     font-family: monospace;
+    padding: 1.6rem;
+    gap: 1.6rem;
 }
