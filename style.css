@@ -147,3 +147,10 @@ a.media:hover {
 .cyan {
     filter: hue-rotate(180deg);
 }
+
+#video {
+    margin-top: 3rem;
+    min-width: 30rem;
+    border: 3px solid white;
+    box-sizing: border-box;
+}
