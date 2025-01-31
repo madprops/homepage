@@ -85,6 +85,7 @@ a.media:visited, a.media:hover, a.media:link {
 
 a.media:hover {
     text-shadow: 0 0 1.18rem currentcolor;
+    text-decoration: underline;
 }
 
 .media_background {
