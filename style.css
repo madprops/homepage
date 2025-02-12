@@ -70,6 +70,23 @@ a:hover {
     gap: 1rem;
 }
 
+.project .title {
+    transition: text-shadow 0.666s;
+}
+
+.project:hover .title {
+    text-shadow: 0 0 1.18rem white;
+}
+
+.project img {
+    outline: 2px solid transparent;
+    transition: outline-color 0.777s;
+}
+
+.project img:hover {
+    outline-color: white;;
+}
+
 #about {
     padding-bottom: 4px;
 }
